@@ -8,7 +8,7 @@ const Works = () => {
 	const { t } = useTranslation()
 
 	return (
-		<div className='container'>
+		<div className='container' id="how-it-works">
 			<div className='works'>
 				<h1 className='works_title'>
 					{t("How it")}

@@ -1,6 +1,6 @@
 import React from 'react'
-import { planData } from './data'
 import { useTranslation } from 'react-i18next'
+import { planData } from './data'
 
 import './index.scss'
 
@@ -8,7 +8,7 @@ const Plans = () => {
 	const { t } = useTranslation()
 
 	return (
-		<div className='container'>
+		<div className='container' id='pricing'>
 			<div className='plans'>
 				<h1 className='plans_title'>{t("Affordable Plans for")}
 					<br />

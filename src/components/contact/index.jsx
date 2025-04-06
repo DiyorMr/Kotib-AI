@@ -7,7 +7,7 @@ const Contact = () => {
 	const { t } = useTranslation()
 
 	return (
-		<div className='container'>
+		<div className='container' id='contact'>
 			<div className="contact">
 				<h1 className='contact_title'>
 					{t("Let’s get in")}

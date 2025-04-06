@@ -11,14 +11,16 @@ const Footer = () => {
 		<div className='footer_wrapper'>
 			<div className="container">
 				<div className="footer">
-					<img src="./logo.svg" alt="" />
+					<a href="#">
+						<img src="./logo.svg" alt="" />
+					</a>
 					<ul className='footer_menu'>
-						<li><a href="#">{t("How it works")}</a></li>
-						<li><a href="#">{t("Features")}</a></li>
-						<li><a href="#">{t("Pricing")}</a></li>
-						<li><a href="#">{t("Blog")}</a></li>
-						<li><a href="#">{t("Faqs")}</a></li>
-						<li><a href="#">{t("Contact")}</a></li>
+						<li><a href="#how-it-works">{t("How it works")}</a></li>
+						<li><a href="#features">{t("Features")}</a></li>
+						<li><a href="#pricing">{t("Pricing")}</a></li>
+						<li><a href="#feedbacks">{t("Blog")}</a></li>
+						<li><a href="#faqs">{t("Faqs")}</a></li>
+						<li><a href="#contact">{t("Contact")}</a></li>
 					</ul>
 				</div>
 				<div className='line' />

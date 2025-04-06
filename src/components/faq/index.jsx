@@ -8,7 +8,7 @@ import { modalData } from './section/data'
 const Faq = () => {
 	const { t } = useTranslation()
 	return (
-		<div className='container'>
+		<div className='container' id='faqs'>
 			<div className="faq">
 				<div className="faq_info">
 					<h1 className='faq_title'>

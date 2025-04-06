@@ -8,7 +8,7 @@ import './index.scss'
 const About = () => {
 	const { t } = useTranslation()
 	return (
-		<div className='container'>
+		<div className='container' id='about-project'>
 			<div className='about'>
 				<div className='about_info'>
 					<h1 className='about_info_title'>{t("Your AI-Powered")}

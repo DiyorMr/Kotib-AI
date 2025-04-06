@@ -1,11 +1,11 @@
 import { MoveLeft, MoveRight } from 'lucide-react'
 import React, { Fragment } from 'react'
+import { useTranslation } from 'react-i18next'
 import 'swiper/css'
 import { Autoplay, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import './index.scss'
 import { swiperData } from './data'
-import { useTranslation } from 'react-i18next'
+import './index.scss'
 
 
 
@@ -14,7 +14,7 @@ const Storie = () => {
 
 	return (
 		<Fragment>
-			<div className='container'>
+			<div className='container' id='feedbacks'>
 				<div className="storie">
 					<h1 className='storie_title'>
 						{t("Customer")}

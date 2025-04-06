@@ -9,7 +9,7 @@ const Kotib = () => {
 	const { t } = useTranslation()
 
 	return (
-		<div className='container'>
+		<div className='container' id='features'>
 			<div className='kotib'>
 				<div className='kotib_info'>
 					<h1 className='kotib_title'>
