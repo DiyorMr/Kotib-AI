@@ -1,0 +1,107 @@
+@import '/src/styles/global.scss';
+@import '/src/styles/variables.scss';
+.kotib {
+	&_info {
+		max-width: 680px;
+		margin-bottom: 39.6px;
+	}
+	&_title {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+		span {
+			color: $text-color;
+			font-size: 64px;
+			font-weight: 500;
+			line-height: 70.4px;
+			letter-spacing: 0%;
+			text-align: left;
+			text-wrap: nowrap;
+		}
+		span:nth-child(2) {
+			color: $main-color;
+		}
+	}
+	&_text {
+		color: $text-color;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 21.6px;
+		text-align: left;
+		text-wrap: wrap;
+	}
+	// card
+	&_cards {
+		display: grid;
+		grid-template-columns: repeat(3, [col] calc((100% - 40px) / 3));
+		grid-template-rows: repeat(2, [row] 324px);
+		grid-gap: 20px;
+		&_item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			border-radius: 20px;
+			background: rgb(39, 40, 41);
+			padding: 20px;
+			&_body {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				p {
+					color: $text-color;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 19.2px;
+					letter-spacing: 0%;
+					text-align: left;
+					width: calc(100% - 60px);
+					max-width: 448px;
+				}
+				&_icon {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-color: $main-color;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.icon {
+						color: $text-color;
+					}
+				}
+			}
+			h1 {
+				color: $text-color;
+				font-size: 34px;
+				font-weight: 500;
+				line-height: 40.8px;
+				letter-spacing: 0%;
+				text-align: left;
+			}
+		}
+		&_item:first-child {
+			grid-column: col;
+			grid-row: row;
+			box-shadow: 0px 4px 12.9px 0px $main-color;
+			background: $main-color;
+			.kotib_cards_item_body_icon {
+				background-color: $text-color;
+			}
+			.icon {
+				color: $main-color;
+			}
+		}
+		&_item:nth-child(2) {
+			grid-column: col 2 / span 2;
+			grid-row: row;
+		}
+		&_item:nth-child(3) {
+			grid-column: col 1 / span 2;
+			grid-row: row 2;
+		}
+		&_item:nth-child(4) {
+			grid-column: col 3 / span;
+			grid-row: row 2;
+		}
+	}
+}

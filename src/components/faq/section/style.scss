@@ -1,0 +1,23 @@
+@import '/src/styles/variables.scss';
+.collapsible {
+	&_content {
+		padding: 6px;
+		font-size: 14px;
+		color: $text-color;
+	}
+	&_header {
+		color: $text-color;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 23.4px;
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+		padding: 12px 8px 12px 0;
+		border-bottom: 1px solid $grey-text-color;
+		cursor: pointer;
+		&_title {
+			font-weight: 400;
+		}
+	}
+}

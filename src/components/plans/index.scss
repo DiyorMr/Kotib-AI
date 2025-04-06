@@ -1,0 +1,103 @@
+@import '/src/styles/global.scss';
+@import '/src/styles/variables.scss';
+.plans {
+	margin-bottom: 85px;
+	&_title {
+		color: $text-color;
+		font-size: 64px;
+		font-weight: 500;
+		line-height: 70.4px;
+		text-align: left;
+	}
+	&_need {
+		color: $main-color;
+	}
+	&_cards {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 45px 0 38px 0;
+		&_sale {
+			width: 392px;
+			border-radius: 40px;
+			background: rgb(39, 40, 41);
+			&_text {
+				color: $text-color;
+				font-size: 48px;
+				font-weight: 600;
+				line-height: 43.2px;
+				letter-spacing: 0%;
+				text-align: center;
+				padding-top: 90px;
+			}
+			&_btn {
+				margin-top: 62px;
+				height: 90px;
+				background: $main-color;
+				border-radius: 0 0 20px 20px;
+				&_text {
+					color: $text-color;
+					font-size: 40px;
+					font-weight: 400;
+					line-height: 43.2px;
+					letter-spacing: 0%;
+					text-align: center;
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+	.plan_card {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&_body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 637px;
+			height: 418px;
+			border-radius: 40px;
+			background: rgb(39, 40, 41);
+			&_info {
+				display: flex;
+				flex-direction: column;
+			}
+			&_title {
+				color: $text-color;
+				font-size: 48px;
+				font-weight: 600;
+				line-height: 43.2px;
+				text-align: center;
+				padding-top: 44px;
+			}
+			&_line {
+				width: 367px;
+				border: 2px solid $text-color;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 30px 0 0 135px;
+			}
+			&_text {
+				color: $text-color;
+				font-size: 50px;
+				font-weight: 400;
+				line-height: 43.2px;
+				text-align: center;
+			}
+		}
+		&_price {
+			background: $main-color;
+			border-radius: 0 0px 16px 16px;
+			&_desc {
+				color: $text-color;
+				font-size: 40px;
+				font-weight: 400;
+				line-height: 43.2px;
+				text-align: center;
+				padding: 20px;
+			}
+		}
+	}
+}

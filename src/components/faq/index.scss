@@ -1,0 +1,35 @@
+@import '/src/styles/global.scss';
+.faq {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
+	background: rgb(39, 40, 41);
+	padding: 60px 40px;
+	&_info {
+		width: 505.93px;
+	}
+	&_title {
+		color: $text-color;
+		font-size: 64px;
+		font-weight: 500;
+		line-height: 70.4px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 4px;
+		.span {
+			color: $main-color;
+		}
+	}
+	&_text {
+		color: $text-color;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 21.6px;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+	.collapse_box {
+		width: 530px;
+	}
+}
